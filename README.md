@@ -3,7 +3,7 @@
 # 说明 
 `UITextView`的超链接不能自定义点击状态等点击属性。此方案提供一种思路：通过寻找点击位置所在的富文本中是否支持 自定义标记链接 来完成自定义点击事件。
 # 栗子
-```
+```swift
 
 - (void)tapAction:(UITapGestureRecognizer *)tap {
     KTJTextKitTouchItem *item = [_touchHandle touchAtPoint:[tap locationInView:self.textView]];
